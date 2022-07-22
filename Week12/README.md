@@ -1,4 +1,4 @@
-Create a list of services using Python. IE: S3, Lambda, EC2, etc
+*Create a list of services using Python. IE: S3, Lambda, EC2, etc*
 
 1. The list should be empty initially.
 2. Populate the list using append or insert.
