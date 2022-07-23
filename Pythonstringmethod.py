@@ -1,0 +1,11 @@
+#!/usr/bin/env python3.7
+message = input("Enter a message: ")
+print("Lowercase:", message.lower())
+print("Uppercase:", message.upper())
+print("Title Case:", message.title())
+print("Capitalized:", message.capitalize())
+words = message.split()
+print("words", words)
+sorted_words = sorted(words)
+print("Alphabetic First:", sorted_words[0])
+print("Alphabetic Last:", sorted_words[-1])
