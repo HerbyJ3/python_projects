@@ -33,11 +33,13 @@ num = int(input("Enter the number of EC2 instances: "))
 #Input to enter Department   
 dept = str(input("Please Enter Your Deptartment: ")).title()        
 
-#conditional if statement, if true to call ec2name function
-if dept in choices:
-    ec2name()
+#conditional loop, if true to call ec2name function
+while dept not in choices and counter >= 1:
+    print("Unauthorized Department Access " + str(counter) + " Attempts Left")
+    dept = str(input("Please Re-Enter Your Deptartment: ")).title()
+    counter -= 1
 else:
-    while dept not in choices and counter >= 1:
-        print("Unauthorized Department Access " + str(counter) + " Attempts Left")
-        dept = str(input("Please Re-Enter Your Deptartment: ")).title()
-        counter -= 1
+    ec2name()
+
+    
+        
