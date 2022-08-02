@@ -5,7 +5,7 @@ from string import digits, punctuation
 #list of Dept's capitalized
 choices = ['Accounting', 'Marketing', 'FinOps']
 
-#converts string to first capital letters, to ensure case sensistivity
+#converts list to first capital letters, to ensure case sensistivity
 for i in range(len(choices)):
     choices[i] = choices[i].title()
 
@@ -17,7 +17,7 @@ list_one = ["Hosting", "Leaseweb", "TechTruce", "One_Big_Company", "Digital_Poti
 #starting counter time
 counter = 3
  
-#function to randomized and generate the list of names + characters
+#function to randomize and generate the list of names + characters
 def ec2name():
     for item in range(num):
         item = random.choice(list_one)
