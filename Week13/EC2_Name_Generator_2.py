@@ -5,7 +5,7 @@ from string import digits, punctuation
 #list of Dept's capitalized
 choices = ['Accounting', 'Marketing', 'FinOps']
 
-#converts string to first capital letters, to ensure case sensistivity
+#converts list to first capital letters, to ensure case sensistivity
 for i in range(len(choices)):
     choices[i] = choices[i].title()
 
