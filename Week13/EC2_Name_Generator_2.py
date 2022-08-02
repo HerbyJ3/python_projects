@@ -40,6 +40,3 @@ while dept not in choices and counter >= 1:
     counter -= 1
 else:
     ec2name()
-
-    
-        
