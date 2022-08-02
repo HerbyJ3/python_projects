@@ -22,7 +22,7 @@ def ec2name():
     for item in range(num):
         item = random.choice(list_one)
         digits = random.choices(string.digits, k=3) #list of random  3 digits
-        letters = random.choices(string.ascii_letters) #list of random 3 letters
+        letters = random.choices(string.ascii_letters, k=3) #list of random 3 letters
         together = digits + letters #list of random letters and numbers combined
         combined = ''.join(random.sample(together, len(together))) #list converted into a string with all characters merged together & shuffled
         print(item + combined)
