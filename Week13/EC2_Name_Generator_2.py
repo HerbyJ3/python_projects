@@ -17,7 +17,7 @@ list_one = ["Hosting", "Leaseweb", "TechTruce", "One_Big_Company", "Digital_Poti
 #starting counter time
 counter = 3
  
-#function to randomized and generate the list of names + characters
+#function to randomize and generate the list of names + characters
 def ec2name():
     for item in range(num):
         item = random.choice(list_one)
