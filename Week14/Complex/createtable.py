@@ -3,7 +3,7 @@ import boto3
 dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 
 table = dynamodb.create_table(
-    TableName='Least_Favorite_Movies',
+    TableName='My_Favorite_Movies',
     KeySchema=[
         {
             'AttributeName': 'year',
